@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3C25BD531B54AFF500BDE42A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25BD521B54AFF500BDE42A /* AppDelegate.swift */; };
-		3C25BD551B54AFF500BDE42A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25BD541B54AFF500BDE42A /* ViewController.swift */; };
-		3C25BD581B54AFF500BDE42A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C25BD561B54AFF500BDE42A /* Main.storyboard */; };
 		3C25BD5A1B54AFF500BDE42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C25BD591B54AFF500BDE42A /* Assets.xcassets */; };
 		3C25BD681B54AFF600BDE42A /* weiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25BD671B54AFF600BDE42A /* weiboTests.swift */; };
 		3C25BD731B54AFF600BDE42A /* weiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25BD721B54AFF600BDE42A /* weiboUITests.swift */; };
+		3CF914491B54EAAB007F0C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF914481B54EAAB007F0C29 /* Main.storyboard */; };
+		3CF9144B1B54EBEF007F0C29 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9144A1B54EBEF007F0C29 /* Home.storyboard */; };
+		3CF9144D1B54EBF8007F0C29 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9144C1B54EBF8007F0C29 /* Message.storyboard */; };
+		3CF9144F1B54EC00007F0C29 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9144E1B54EC00007F0C29 /* Discover.storyboard */; };
+		3CF914511B54EC09007F0C29 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF914501B54EC09007F0C29 /* Profile.storyboard */; };
+		3CF914531B54ECB4007F0C29 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914521B54ECB4007F0C29 /* MainTabBarController.swift */; };
+		3CF914551B54ECC9007F0C29 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914541B54ECC9007F0C29 /* HomeTableViewController.swift */; };
+		3CF914571B54ECD3007F0C29 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914561B54ECD3007F0C29 /* MessageTableViewController.swift */; };
+		3CF914591B54ECE1007F0C29 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914581B54ECE1007F0C29 /* DiscoverTableViewController.swift */; };
+		3CF9145B1B54ECEB007F0C29 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9145A1B54ECEB007F0C29 /* ProfileTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +43,6 @@
 /* Begin PBXFileReference section */
 		3C25BD4F1B54AFF500BDE42A /* weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C25BD521B54AFF500BDE42A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C25BD541B54AFF500BDE42A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C25BD571B54AFF500BDE42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C25BD591B54AFF500BDE42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C25BD5E1B54AFF500BDE42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C25BD631B54AFF600BDE42A /* weiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +51,16 @@
 		3C25BD6E1B54AFF600BDE42A /* weiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C25BD721B54AFF600BDE42A /* weiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weiboUITests.swift; sourceTree = "<group>"; };
 		3C25BD741B54AFF600BDE42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF914481B54EAAB007F0C29 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3CF9144A1B54EBEF007F0C29 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		3CF9144C1B54EBF8007F0C29 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		3CF9144E1B54EC00007F0C29 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		3CF914501B54EC09007F0C29 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		3CF914521B54ECB4007F0C29 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		3CF914541B54ECC9007F0C29 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		3CF914561B54ECD3007F0C29 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		3CF914581B54ECE1007F0C29 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		3CF9145A1B54ECEB007F0C29 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +111,8 @@
 		3C25BD511B54AFF500BDE42A /* weibo */ = {
 			isa = PBXGroup;
 			children = (
+				3CF9143F1B54E8FA007F0C29 /* Classes */,
 				3C25BD521B54AFF500BDE42A /* AppDelegate.swift */,
-				3C25BD541B54AFF500BDE42A /* ViewController.swift */,
-				3C25BD561B54AFF500BDE42A /* Main.storyboard */,
 				3C25BD591B54AFF500BDE42A /* Assets.xcassets */,
 				3C25BD5E1B54AFF500BDE42A /* Info.plist */,
 			);
@@ -120,6 +135,90 @@
 				3C25BD741B54AFF600BDE42A /* Info.plist */,
 			);
 			path = weiboUITests;
+			sourceTree = "<group>";
+		};
+		3CF9143F1B54E8FA007F0C29 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3CF914401B54E8FA007F0C29 /* Model(业务模型) */,
+				3CF914411B54E8FA007F0C29 /* Module(功能模块) */,
+				3CF914421B54E8FA007F0C29 /* Tools(工具) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3CF914401B54E8FA007F0C29 /* Model(业务模型) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Model(业务模型)";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CF914411B54E8FA007F0C29 /* Module(功能模块) */ = {
+			isa = PBXGroup;
+			children = (
+				3CF914451B54E99C007F0C29 /* Main */,
+				3CF914441B54E99C007F0C29 /* Home */,
+				3CF914461B54E99C007F0C29 /* Message */,
+				3CF914431B54E99C007F0C29 /* Discover */,
+				3CF914471B54E99C007F0C29 /* Profile */,
+			);
+			name = "Module(功能模块)";
+			path = Module;
+			sourceTree = "<group>";
+		};
+		3CF914421B54E8FA007F0C29 /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Tools(工具)";
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3CF914431B54E99C007F0C29 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				3CF9144E1B54EC00007F0C29 /* Discover.storyboard */,
+				3CF914581B54ECE1007F0C29 /* DiscoverTableViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		3CF914441B54E99C007F0C29 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3CF9144A1B54EBEF007F0C29 /* Home.storyboard */,
+				3CF914541B54ECC9007F0C29 /* HomeTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3CF914451B54E99C007F0C29 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3CF914481B54EAAB007F0C29 /* Main.storyboard */,
+				3CF914521B54ECB4007F0C29 /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3CF914461B54E99C007F0C29 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				3CF9144C1B54EBF8007F0C29 /* Message.storyboard */,
+				3CF914561B54ECD3007F0C29 /* MessageTableViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		3CF914471B54E99C007F0C29 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3CF914501B54EC09007F0C29 /* Profile.storyboard */,
+				3CF9145A1B54ECEB007F0C29 /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,8 +324,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CF914511B54EC09007F0C29 /* Profile.storyboard in Resources */,
+				3CF9144B1B54EBEF007F0C29 /* Home.storyboard in Resources */,
 				3C25BD5A1B54AFF500BDE42A /* Assets.xcassets in Resources */,
-				3C25BD581B54AFF500BDE42A /* Main.storyboard in Resources */,
+				3CF9144F1B54EC00007F0C29 /* Discover.storyboard in Resources */,
+				3CF9144D1B54EBF8007F0C29 /* Message.storyboard in Resources */,
+				3CF914491B54EAAB007F0C29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +354,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C25BD551B54AFF500BDE42A /* ViewController.swift in Sources */,
+				3CF9145B1B54ECEB007F0C29 /* ProfileTableViewController.swift in Sources */,
+				3CF914551B54ECC9007F0C29 /* HomeTableViewController.swift in Sources */,
+				3CF914531B54ECB4007F0C29 /* MainTabBarController.swift in Sources */,
+				3CF914571B54ECD3007F0C29 /* MessageTableViewController.swift in Sources */,
+				3CF914591B54ECE1007F0C29 /* DiscoverTableViewController.swift in Sources */,
 				3C25BD531B54AFF500BDE42A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,17 +393,6 @@
 			targetProxy = 3C25BD6F1B54AFF600BDE42A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3C25BD561B54AFF500BDE42A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C25BD571B54AFF500BDE42A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3C25BD751B54AFF600BDE42A /* Debug */ = {
