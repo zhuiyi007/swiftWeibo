@@ -11,7 +11,6 @@
 		3C25BD551B54AFF500BDE42A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25BD541B54AFF500BDE42A /* ViewController.swift */; };
 		3C25BD581B54AFF500BDE42A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C25BD561B54AFF500BDE42A /* Main.storyboard */; };
 		3C25BD5A1B54AFF500BDE42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C25BD591B54AFF500BDE42A /* Assets.xcassets */; };
-		3C25BD5D1B54AFF500BDE42A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C25BD5B1B54AFF500BDE42A /* LaunchScreen.storyboard */; };
 		3C25BD681B54AFF600BDE42A /* weiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25BD671B54AFF600BDE42A /* weiboTests.swift */; };
 		3C25BD731B54AFF600BDE42A /* weiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C25BD721B54AFF600BDE42A /* weiboUITests.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		3C25BD541B54AFF500BDE42A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C25BD571B54AFF500BDE42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C25BD591B54AFF500BDE42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C25BD5C1B54AFF500BDE42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C25BD5E1B54AFF500BDE42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C25BD631B54AFF600BDE42A /* weiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C25BD671B54AFF600BDE42A /* weiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weiboTests.swift; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 				3C25BD541B54AFF500BDE42A /* ViewController.swift */,
 				3C25BD561B54AFF500BDE42A /* Main.storyboard */,
 				3C25BD591B54AFF500BDE42A /* Assets.xcassets */,
-				3C25BD5B1B54AFF500BDE42A /* LaunchScreen.storyboard */,
 				3C25BD5E1B54AFF500BDE42A /* Info.plist */,
 			);
 			path = weibo;
@@ -228,7 +225,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C25BD5D1B54AFF500BDE42A /* LaunchScreen.storyboard in Resources */,
 				3C25BD5A1B54AFF500BDE42A /* Assets.xcassets in Resources */,
 				3C25BD581B54AFF500BDE42A /* Main.storyboard in Resources */,
 			);
@@ -298,14 +294,6 @@
 				3C25BD571B54AFF500BDE42A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3C25BD5B1B54AFF500BDE42A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C25BD5C1B54AFF500BDE42A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -398,6 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZhuiYi.weibo;
@@ -409,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZhuiYi.weibo;
@@ -483,6 +473,7 @@
 				3C25BD791B54AFF600BDE42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C25BD7A1B54AFF600BDE42A /* Build configuration list for PBXNativeTarget "weiboTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +482,7 @@
 				3C25BD7C1B54AFF600BDE42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C25BD7D1B54AFF600BDE42A /* Build configuration list for PBXNativeTarget "weiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +491,7 @@
 				3C25BD7F1B54AFF600BDE42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
