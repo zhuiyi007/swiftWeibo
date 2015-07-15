@@ -20,10 +20,7 @@ class MainTabBar: UITabBar {
         for view in subviews as [UIView] {
             if view.isKindOfClass(UIControl) && !view.isKindOfClass(UIButton){
                 view.frame = CGRectOffset(frame, width * i, 0)
-                i++
-                if i == 2 {
-                    i++
-                }
+                i = i == 1 ? i + 2 : i + 1
             }
         }
         

@@ -9,7 +9,8 @@
 import UIKit
 
 class MainViewController: UITabBarController {
-
+    // 可以直接放问到自定义tabBar中的按钮
+    @IBOutlet weak var mainTabBar: MainTabBar!
     /*
         tabBarController
         tabBar:         大条
@@ -20,12 +21,20 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         
         addChildViewControllers()
+        mainTabBar.plusButton.addTarget(self, action: "plusButtonClicked", forControlEvents: UIControlEvents.TouchUpInside)
+    }
+    
+    /**
+    加号按钮的点击事件
+    */
+    func plusButtonClicked () {
+        print("点击了加号按钮")
     }
     
     /**
     添加所有的子视图控制器
     */
-    func addChildViewControllers() {
+    private func addChildViewControllers() {
         
         tabBar.tintColor = UIColor.orangeColor()
         
@@ -38,7 +47,7 @@ class MainViewController: UITabBarController {
     }
     
     // 重载系统的函数
-    func addChildViewController(storyBoardName: String, _ title: String, _ imageName: String) {
+    private func addChildViewController(storyBoardName: String, _ title: String, _ imageName: String) {
         let story = UIStoryboard(name: storyBoardName, bundle: nil)
         let nav = story.instantiateInitialViewController() as! UINavigationController
         nav.title = title
