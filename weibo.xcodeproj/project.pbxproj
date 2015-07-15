@@ -16,11 +16,12 @@
 		3CF9144D1B54EBF8007F0C29 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9144C1B54EBF8007F0C29 /* Message.storyboard */; };
 		3CF9144F1B54EC00007F0C29 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9144E1B54EC00007F0C29 /* Discover.storyboard */; };
 		3CF914511B54EC09007F0C29 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF914501B54EC09007F0C29 /* Profile.storyboard */; };
-		3CF914531B54ECB4007F0C29 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914521B54ECB4007F0C29 /* MainTabBarController.swift */; };
+		3CF914531B54ECB4007F0C29 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914521B54ECB4007F0C29 /* MainViewController.swift */; };
 		3CF914551B54ECC9007F0C29 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914541B54ECC9007F0C29 /* HomeTableViewController.swift */; };
 		3CF914571B54ECD3007F0C29 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914561B54ECD3007F0C29 /* MessageTableViewController.swift */; };
 		3CF914591B54ECE1007F0C29 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914581B54ECE1007F0C29 /* DiscoverTableViewController.swift */; };
 		3CF9145B1B54ECEB007F0C29 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9145A1B54ECEB007F0C29 /* ProfileTableViewController.swift */; };
+		3CF9145D1B55FB65007F0C29 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9145C1B55FB65007F0C29 /* MainTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +57,12 @@
 		3CF9144C1B54EBF8007F0C29 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		3CF9144E1B54EC00007F0C29 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		3CF914501B54EC09007F0C29 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		3CF914521B54ECB4007F0C29 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		3CF914521B54ECB4007F0C29 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3CF914541B54ECC9007F0C29 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		3CF914561B54ECD3007F0C29 /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		3CF914581B54ECE1007F0C29 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		3CF9145A1B54ECEB007F0C29 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		3CF9145C1B55FB65007F0C29 /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				3CF914481B54EAAB007F0C29 /* Main.storyboard */,
-				3CF914521B54ECB4007F0C29 /* MainTabBarController.swift */,
+				3CF914521B54ECB4007F0C29 /* MainViewController.swift */,
+				3CF9145C1B55FB65007F0C29 /* MainTabBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -356,7 +359,8 @@
 			files = (
 				3CF9145B1B54ECEB007F0C29 /* ProfileTableViewController.swift in Sources */,
 				3CF914551B54ECC9007F0C29 /* HomeTableViewController.swift in Sources */,
-				3CF914531B54ECB4007F0C29 /* MainTabBarController.swift in Sources */,
+				3CF9145D1B55FB65007F0C29 /* MainTabBar.swift in Sources */,
+				3CF914531B54ECB4007F0C29 /* MainViewController.swift in Sources */,
 				3CF914571B54ECD3007F0C29 /* MessageTableViewController.swift in Sources */,
 				3CF914591B54ECE1007F0C29 /* DiscoverTableViewController.swift in Sources */,
 				3C25BD531B54AFF500BDE42A /* AppDelegate.swift in Sources */,
