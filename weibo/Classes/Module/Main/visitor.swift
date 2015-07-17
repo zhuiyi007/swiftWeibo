@@ -8,10 +8,20 @@
 
 import UIKit
 
+// 要遵守NSObjectProtocol协议
+protocol visitorDelegate: NSObjectProtocol{
+    // 点击登录按钮
+    func visitorLoginButtonClicked()
+    // 点击注册按钮
+    func visitorResignButtonClicked()
+}
+
 class visitor: UIView {
     @IBOutlet weak var centerIcon: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var roundWeel: UIImageView!
+    
+    weak var delegate: visitorDelegate?
     
     // 传递参数的时候可以传递一个默认值,就不用到处改代码了
     func createUI(centerIcon: String, _ textLabel: String, _ isHome: Bool = false) {
@@ -47,7 +57,9 @@ class visitor: UIView {
     }
     
     @IBAction func resignButtonClicked(sender: UIButton) {
+        delegate?.visitorResignButtonClicked()
     }
     @IBAction func loginButtonClicked(sender: UIButton) {
+        delegate?.visitorLoginButtonClicked()
     }
 }

@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // 设置导航栏外观
+        // 一经设置,所有的navigation都会改变
+        // 外观的设置要尽量的早
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         return true
     }
 
