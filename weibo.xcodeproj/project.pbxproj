@@ -25,6 +25,8 @@
 		3CF9145F1B5648DE007F0C29 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9145E1B5648DE007F0C29 /* BaseTableViewController.swift */; };
 		3CF914611B564ABF007F0C29 /* visitor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF914601B564ABF007F0C29 /* visitor.xib */; };
 		3CF914631B56507E007F0C29 /* visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF914621B56507E007F0C29 /* visitor.swift */; };
+		3CFBDC391B5F468D000EBA28 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBDC381B5F468D000EBA28 /* OAuthViewController.swift */; };
+		3CFBDC3B1B5F46A1000EBA28 /* OAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CFBDC3A1B5F46A1000EBA28 /* OAuth.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		3CF9145E1B5648DE007F0C29 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		3CF914601B564ABF007F0C29 /* visitor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = visitor.xib; sourceTree = "<group>"; };
 		3CF914621B56507E007F0C29 /* visitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = visitor.swift; sourceTree = "<group>"; };
+		3CFBDC381B5F468D000EBA28 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		3CFBDC3A1B5F46A1000EBA28 /* OAuth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAuth.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 		3CF914411B54E8FA007F0C29 /* Module(功能模块) */ = {
 			isa = PBXGroup;
 			children = (
+				3CFBDC341B5F454D000EBA28 /* OAuth */,
 				3CF914451B54E99C007F0C29 /* Main */,
 				3CF914441B54E99C007F0C29 /* Home */,
 				3CF914461B54E99C007F0C29 /* Message */,
@@ -233,6 +238,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		3CFBDC341B5F454D000EBA28 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3CFBDC381B5F468D000EBA28 /* OAuthViewController.swift */,
+				3CFBDC3A1B5F46A1000EBA28 /* OAuth.storyboard */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -295,6 +309,7 @@
 		3C25BD471B54AFF500BDE42A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ZhuiYi;
 				TargetAttributes = {
@@ -336,6 +351,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CFBDC3B1B5F46A1000EBA28 /* OAuth.storyboard in Resources */,
 				3CF914611B564ABF007F0C29 /* visitor.xib in Resources */,
 				3CF914511B54EC09007F0C29 /* Profile.storyboard in Resources */,
 				3CF9144B1B54EBEF007F0C29 /* Home.storyboard in Resources */,
@@ -371,6 +387,7 @@
 				3CF9145B1B54ECEB007F0C29 /* ProfileTableViewController.swift in Sources */,
 				3CF914551B54ECC9007F0C29 /* HomeTableViewController.swift in Sources */,
 				3CF9145F1B5648DE007F0C29 /* BaseTableViewController.swift in Sources */,
+				3CFBDC391B5F468D000EBA28 /* OAuthViewController.swift in Sources */,
 				3CF9145D1B55FB65007F0C29 /* MainTabBar.swift in Sources */,
 				3CF914531B54ECB4007F0C29 /* MainViewController.swift in Sources */,
 				3CF914571B54ECD3007F0C29 /* MessageTableViewController.swift in Sources */,
@@ -499,10 +516,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZhuiYi.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -511,6 +530,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = weibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZhuiYi.weibo;

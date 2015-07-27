@@ -32,7 +32,8 @@ class BaseTableViewController: UITableViewController, visitorDelegate {
     }
     
     func visitorLoginButtonClicked() {
-        print("登录按钮")
+        let story = UIStoryboard(name: "OAuth", bundle: nil)
+        presentViewController(story.instantiateInitialViewController() as UIViewController!, animated: true, completion: nil)
     }
     
     func visitorResignButtonClicked() {

@@ -33,7 +33,6 @@ class visitor: UIView {
         } else {
             self.centerIcon.hidden = true
             self.roundWeel.image = UIImage(named: centerIcon)
-            stopAnimation()
         }
         self.textLabel.text = textLabel
     }
@@ -46,15 +45,11 @@ class visitor: UIView {
         anim.toValue = 2 * M_PI
         anim.repeatCount = MAXFLOAT
         anim.duration = 20
+        // 当动画结束的时候移除,默认为true,如果不移除动画的话,每次都会往图层上新加动画
+//        anim.removedOnCompletion = false
         roundWeel.layer.addAnimation(anim, forKey: nil)
     }
     
-    /**
-    停止动画
-    */
-    func stopAnimation() {
-        roundWeel.layer.removeAllAnimations()
-    }
     
     @IBAction func resignButtonClicked(sender: UIButton) {
         delegate?.visitorResignButtonClicked()
